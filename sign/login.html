@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="css/login.css"/>
+</head>
+<body>
+  <div id="header">
+    <img src="img/Amazon-top-logo.png" alt=""/>
+    <h2>登录新用户</h2>
+  </div>
+
+  <div id="parent">
+    <form action="">
+      <div>
+        <label for="uname">邮箱地址或手机号码：</label><br/>
+        <input id="uname" type="text" placeholder="请 输 入 用 户 名 ！" autofocus required/>
+      </div>
+      <div>
+        <label for="upwd">密码：</label><br/>
+        <input id="upwd" type="text" placeholder="请 输 入 用 户 密 码 ！" required/>
+      </div>
+      <a href="#" class="b-login">登录</a>
+      <p>-------------更多登录方式-------------</p>
+      <div id="weChat">
+        <a href="#">
+          <span></span>微信账号登录
+        </a>
+      </div>
+      <p>-----------Amazon的新客户?-----------</p>
+      <div id="new-account">
+        <a href="#">创建您的Amazon账户</a>
+      </div>
+      <div id="agree">
+        登录即表示您同意网站的<a href="#">使用条件</a>及<a href="#">隐私声明</a>
+      </div>
+    </form>
+  </div>
+
+  <script src="js/jquery-1.11.3.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>
