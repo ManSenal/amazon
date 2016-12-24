@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Amazon-Register</title>
+  <link rel="stylesheet" href="css/register.css"/>
+</head>
+<body>
+  <div id="header">
+    <img src="img/Amazon-top-logo.png" alt=""/>
+    <h2>注册新用户</h2>
+  </div>
+  <div class="parent">
+    <video src="video/birds.mp4" width="100%" autoplay loop muted></video>
+    <div class="container">
+      <div class="panel">
+        <form id="form-register">
+          <div class="form-group">
+            <label for="uname">用户名称：</label>
+            <input required minlength="6" maxlength="9" type="text" placeholder="请输入用户名字" autofocus name="uname" id="uname"/>
+            <span class="msg-default">用户名长度在6到9位之间</span>
+          </div>
+          <div class="form-group">
+            <label for="upwd">用户密码：</label>
+            <input required type="password" minlength="6" maxlength="12" placeholder="请输入用户密码" name="upwd" id="upwd"/>
+            <span class="msg-default hidden">密码长度在6到12位之间</span>
+          </div>
+          <div class="form-group">
+            <label for="email">用户邮箱：</label>
+            <input required type="email" placeholder="请输入邮箱地址" name="email" id="email"/>
+            <span class="msg-default hidden">请输入合法的邮箱地址</span>
+          </div>
+          <div class="form-group">
+            <label for="phone">手机号码：</label>
+            <input required placeholder="请输入手机号码（选填）" name="phone" id="phone"/>
+            <span class="msg-default hidden">请输入正确格式的手机号码</span>
+          </div>
+          <div class="form-group">
+            <label for="age">用户年龄：</label>
+            <input required type="number" min="18" max="60" placeholder="请输入用户年龄" name="age" id="age"/>
+            <span class="msg-default hidden">年龄在18~60之间</span>
+          </div>
+          <div class="form-group">
+            <label for="birthday">出生日期：</label>
+            <input required type="date" placeholder="请输入用户出生日期" name="birthday" id="birthday"/>
+            <span class="msg-default hidden">请输入正确格式的出生日期</span>
+          </div>
+          <div class="form-group">
+            <label></label>
+            <input id="bt-register" type="button" value="提交注册信息" style="font-size:12pt;font-weight:bold;"/>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery-1.11.3.js"></script>
+  <script src="js/register.js"></script>
+</body>
+</html>
